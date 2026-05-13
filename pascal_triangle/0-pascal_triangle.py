@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""0-pascal_triangle.py is a function that create a triangle of Pascal"""
+
 
 def pascal_triangle(n):
     """A list of lists of int representing the Pascal's triangle of n"""
