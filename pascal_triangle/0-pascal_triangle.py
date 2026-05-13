@@ -2,8 +2,8 @@
 
 def pascal_triangle(n):
     """A list of lists of int representing the Pascal's triangle of n"""
-    if not isinstance(n, int) or n <= 0:
-        return []    
+    if n <= 0:
+        return []
 
     pascal_list = [[1]]
     for i in range(1, n):
