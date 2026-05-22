@@ -4,13 +4,17 @@
 
 def canUnlockAll(boxes):
     """check if all the boxes can be open"""
+
+    if len(boxes) <= 0:
+        return True
+
     open_boxes = {0}
     keys = [0]
     while len(keys) > 0:
         actual_box = keys.pop()
 
         for i in boxes[actual_box]:
-            if i not in open_boxes:
+            if i < len(boxes) and i not in open_boxes:
                 open_boxes.add(i)
                 keys.append(i)
 
