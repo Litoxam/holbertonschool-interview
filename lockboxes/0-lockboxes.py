@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Lockboxes"""
+
 
 def canUnlockAll(boxes):
+    """check if all the boxes can be open"""
     to_open = [0]
     open_boxes = [0]
     while len(to_open) > 0:
@@ -10,7 +13,7 @@ def canUnlockAll(boxes):
             if key not in open_boxes:
                 open_boxes.append(key)
                 to_open.append(key)
-    
+
     if len(open_boxes) == len(boxes):
         return True
     else:
