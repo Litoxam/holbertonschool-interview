@@ -15,15 +15,14 @@ def minOperations(n):
 
     while n > 1:
 
-        # Check if divider is a factor of n
+        # Checks if divider is a factor of n
         # At first if 2 is a factor, then divider is incremented
         while n % divider == 0:
             total += divider
-            n = n // divider
+            n = n // divider # n need to be an integer
+        divider += 1 # Try the next possible factor
 
-        divider += 1
-
-    return total
+    return total # number of minimal operations
 
 
 if __name__ == "__main__":
