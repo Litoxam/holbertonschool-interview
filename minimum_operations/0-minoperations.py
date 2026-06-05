@@ -19,10 +19,10 @@ def minOperations(n):
         # At first if 2 is a factor, then divider is incremented
         while n % divider == 0:
             total += divider
-            n = n // divider # n need to be an integer
-        divider += 1 # Try the next possible factor
+            n = n // divider  # n need to be an integer
+        divider += 1  # Try the next possible factor
 
-    return total # number of minimal operations
+    return total  # number of minimal operations
 
 
 if __name__ == "__main__":
