@@ -16,7 +16,7 @@ request(url, function (error, response, body) {
   // each character is a URL
   const characters = film.characters;
 
-  function displayCharacters(index) {
+  function displayCharacters (index) {
     if (index === characters.length) {
       return;
     }
@@ -29,10 +29,10 @@ request(url, function (error, response, body) {
 
       const character = JSON.parse(body);
       console.log(character.name);
-// incrementation
+      // incrementation
       displayCharacters(index + 1);
     });
   }
-// run the function
+  // run the function
   displayCharacters(0);
 });
