@@ -31,7 +31,7 @@ if __name__ == "__main__":
         for line in sys.stdin:
             line_count += 1
 
-            match = pattern.fullmatch(line)
+            match = pattern.fullmatch(line.strip())
 
             if match:
                 status = match.group(1)
